@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Especial para Mi Novia</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        #mensaje {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ff1493; /* Color rosa para el mensaje */
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+
+        #gifContainer {
+            max-width: 60%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #gif_inicial {
+            max-width: 100%;
+            border-radius: 0;
+            display: inline-block;
+        }
+
+        #imagen_alternativa,
+        #imagen_otra,
+        #imagen_cosito {
+            max-width: 100%;
+            border-radius: 0;
+            display: none;
+        }
+
+        #opciones {
+            display: flex;
+            gap: 20px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .boton {
+            padding: 20px 40px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #siQuiero {
+            background-color: #32cd32; /* Color verde para el botón 'Sí Quiero' */
+            color: #fff;
+        }
+
+        #noQuiero {
+            background-color: #ff4500; /* Color naranja-rojizo para el botón 'No Quiero' */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="mensaje">Holaaa mi amor</div>
+    <div id="gifContainer">
+        <img id="gif_inicial" src="love.gif" alt="Foto">
+       
+        <img id="imagen_alternativa" src="Borzoi.jpeg" alt="Imagen Alternativa" width="200px">
+        <img id="imagen_otra" src="Doggos-Doing-Things.jpeg" alt="Otra Imagen" width="200px">
+        <img id="imagen_cosito" src="20 Funny Dog Smiling Photos You Have to See.jpeg" alt="Imagen COSITO" width="200px">
+    </div>
+    <div id="opciones">
+        <a href="#" class="boton" id="siQuiero">Siiii teamo novio</a>
+        <a href="#" class="boton" id="noQuiero">Do quiero, soy odiosa</a>
+        <!-- Elimina los siguientes dos botones del HTML para mostrarlos dinámicamente -->
+    </div>
+
+    <script>
+       
+
+        document.getElementById('noQuiero').addEventListener('click', function () {
+            // Cambiar la imagen
+            document.getElementById('gif_inicial').style.display = 'none';
+            document.getElementById('imagen_alternativa').style.display = 'none';
+            document.getElementById('imagen_otra').style.display = 'none';
+            document.getElementById('imagen_cosito').style.display = 'block';
+
+            // Ajustar los estilos de los botones
+            document.getElementById('noQuiero').innerHTML = "NO QUIERO";
+            document.getElementById('noQuiero').style.padding = "20px 30px";
+            document.getElementById('noQuiero').style.fontSize = "13px";
+           
+
+// WOWOWO
+            document.getElementById('noQuiero').addEventListener('click', function () {
+                document.getElementById('gif_inicial').style.display = 'none';
+            document.getElementById('imagen_alternativa').style.display = 'none';
+            document.getElementById('imagen_otra').style.display = 'block';
+            document.getElementById('imagen_cosito').style.display = 'none';
+
+            // Ajustar los estilos de los botones
+            document.getElementById('noQuiero').innerHTML = "OIGA!!!";
+            document.getElementById('noQuiero').style.padding = "15px 20px";
+            document.getElementById('noQuiero').style.fontSize = "10px";
+            document.getElementById('noQuiero').addEventListener('click', function () {
+                var mensajeAbajo = document.createElement('div');
+    mensajeAbajo.innerHTML = 'jijijijijiji ya no puedes oprimir el boton (te odio)';
+    mensajeAbajo.style.marginTop = '10px'; // Ajusta el margen según tu preferencia
+    mensajeAbajo.style.color = '#32cd32'; // Color verde
+    mensajeAbajo.style.fontWeight = 'bold';
+
+    // Inserta el mensaje debajo de los botones
+    document.getElementById('opciones').appendChild(mensajeAbajo);
+
+    // Ocultar el botón rojo
+    this.style.display = 'none';
+            });
+            
+            document.getElementById('siQuiero').innerHTML = "ahora si gonorrea, escoge bien o sino me muero";
+            document.getElementById('siQuiero').style.padding = "30px 50px";
+            document.getElementById('siQuiero').style.fontSize = "16px";
+
+            });
+
+       // AAA
+
+            document.getElementById('siQuiero').innerHTML = "Si quiero novioo teadoro mucho muchisimo";
+            document.getElementById('siQuiero').style.padding = "20px 36px";
+            document.getElementById('siQuiero').style.fontSize = "16px";
+        });
+
+ document.getElementById('siQuiero').addEventListener('click', function () {
+
+
+    document.getElementById('gif_inicial').style.display = 'none';
+            document.getElementById('imagen_alternativa').style.display = 'none';
+            document.getElementById('imagen_otra').style.display = 'none';
+            document.getElementById('imagen_cosito').style.display = 'none';
+
+    // Cambiar el fondo del documento
+    document.body.style.backgroundImage = "url('pngegg.png')"; // Reemplaza 'corazones.jpg' con la URL de tu imagen
+    document.body.style.backgroundRepeat = "repeat"; // Repetir la imagen de fondo
+    document.body.style.backgroundSize = "cover"; // Ajustar el tamaño de la imagen para cubrir todo el fondo
+
+    // Cambiar el mensaje debajo de los botones
+    document.getElementById('opciones').style.display = 'none';
+    
+    // Mostrar mensaje debajo de los botones
+    var mensajeAbajo = document.createElement('div');
+    mensajeAbajo.innerHTML = 'Siiii dijiste que siii, teamo mucho , nos vemos el 14 :)';
+    mensajeAbajo.style.fontSize='27px'
+    mensajeAbajo.style.marginTop = '10px'; // Ajusta el margen según tu preferencia
+    mensajeAbajo.style.color = '#ff1493'; // Color rosa
+    mensajeAbajo.style.fontWeight = 'bold';
+
+    // Insertar el mensaje debajo de los botones
+    document.body.appendChild(mensajeAbajo);
+    var mediaContainer = document.createElement('div');
+mediaContainer.style.display = 'flex'; // Establecer la disposición flex para las imágenes y gifs
+mediaContainer.style.marginTop = '20px'; // Ajusta el margen superior según tu preferencia
+mediaContainer.style.marginRight='200px'
+mediaContainer.style.maxWidth = '80%'; // Ancho máximo del contenedor
+
+var imageElement1 = document.createElement('img');
+imageElement1.src = 'fotito.jpeg'; // Reemplaza 'rojos.jpeg' con la URL de tu primera imagen
+imageElement1.style.width = '300px';
+imageElement1.className = 'imagenNueva';
+imageElement1.style.borderRadius = '0';
+imageElement1.style.marginRight = '10px'; // Ajusta el margen derecho según tu preferencia
+
+mediaContainer.appendChild(imageElement1);
+// Gif 1
+var gifElement1 = document.createElement('img');
+gifElement1.src = 'milk-and-mocha-milk-mocha.gif'; // Reemplaza 'tu_primer_gif.gif' con la URL de tu primer gif
+gifElement1.style.width = '250px'; // Ajusta el ancho del gif según tu preferencia
+gifElement1.style.borderRadius = '0';
+gifElement1.style.marginRight = '10px'; // Ajusta el margen derecho del gif según tu preferencia
+
+mediaContainer.appendChild(gifElement1);
+
+// Imagen 1
+var imageElement1 = document.createElement('img');
+imageElement1.src = 'rojos.jpeg'; // Reemplaza 'rojos.jpeg' con la URL de tu primera imagen
+imageElement1.style.width = '250px';
+imageElement1.className = 'imagenNueva';
+imageElement1.style.borderRadius = '0';
+imageElement1.style.marginRight = '10px'; // Ajusta el margen derecho según tu preferencia
+
+mediaContainer.appendChild(imageElement1);
+
+// Gif 2
+var gifElement2 = document.createElement('img');
+gifElement2.src = 'kiss-milk-and-mocha.gif'; // Reemplaza 'tu_segundo_gif.gif' con la URL de tu segundo gif
+gifElement2.style.width = '250px'; // Ajusta el ancho del gif según tu preferencia
+gifElement2.style.borderRadius = '0';
+gifElement2.style.marginRight = '10px'; // Ajusta el margen derecho del gif según tu preferencia
+
+mediaContainer.appendChild(gifElement2);
+
+// Imagen 2
+var imageElement2 = document.createElement('img');
+imageElement2.src = 'gordos.jpeg'; // Reemplaza 'gordos.jpeg' con la URL de tu segunda imagen
+imageElement2.style.width = '250px';
+imageElement2.className = 'imagenNueva';
+imageElement2.style.borderRadius = '0';
+imageElement2.style.marginRight = '10px'; // Ajusta el margen derecho según tu preferencia
+
+mediaContainer.appendChild(imageElement2);
+
+// Y así sucesivamente para otras imágenes y gifs...
+
+// Insertar el contenedor de imágenes y gifs en el documento
+document.body.appendChild(mediaContainer);
+
+});
+
+
+        // Espera 3 segundos y luego desvanece el primer mensaje y muestra los botones
+        setTimeout(function () {
+            var mensajeElement = document.getElementById('mensaje');
+            var opcionesElement = document.getElementById('opciones');
+
+            mensajeElement.style.opacity = 0;
+            opcionesElement.style.opacity = 1;
+
+            // Después de desvanecerse, cambia el mensaje a "Quieres ser mi valentín :) ?"
+            setTimeout(function () {
+                mensajeElement.innerHTML = "Quieres ser mi valentín :) ?";
+                mensajeElement.style.opacity = 1; // Muestra el nuevo mensaje
+            }, 800); // Espera 1 segundo después de desvanecerse
+        }, 2500); // Espera 3 segundos antes de desvanecer el primer mensaje
+    </script>
+</body>
+</html>
